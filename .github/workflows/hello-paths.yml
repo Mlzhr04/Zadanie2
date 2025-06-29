@@ -1,0 +1,12 @@
+name: Conditional Hello
+
+on:
+  push:
+    paths:
+      - 'src/**'
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, GitHub Actions!"
